@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Tsaryk - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+        
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #7f8c8d;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        em {
+            color: #5d6d7e;
+            font-style: italic;
+        }
+        
+        small {
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+        
+        nav {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #d5dbdb;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .project-card {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 1px solid #bdc3c7;
+            padding-top: 1rem;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Portfolio & Experience</h1>
+            <h2>Technical Projects & Research</h2>
+        </header>
+        
+        <section>
+            <h3>Research Experience</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4><strong>AI Research - Summer 2024</strong></h4>
+                    <p>Conducted research on <em>time series forecasting algorithms</em> and their integration with large language models. Developed novel approaches to combine traditional statistical methods with modern transformer architectures.</p>
+                    <p><small>Technologies: Python, PyTorch, Transformers, Pandas</small></p>
+                </div>
+                
+                <div class="project-card">
+                    <h4><strong>LLM Integration Systems</strong></h4>
+                    <p>Built comprehensive systems for integrating language models into predictive analytics pipelines, focusing on <em>real-time data processing</em> and adaptive model selection.</p>
+                    <p><small>Technologies: API Design, Machine Learning, Data Engineering</small></p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Entrepreneurial Ventures</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4><strong>Nivalis Labs</strong></h4>
+                    <p>Developing cutting-edge <em>autonomous airspace security solutions</em> using edge AI technology. Building systems that can perceive threats, make intelligent decisions, and take protective actions in real-time.</p>
+                    <p><small>Focus Areas: Edge Computing, Computer Vision, Autonomous Systems</small></p>
+                </div>
+                
+                <div class="project-card">
+                    <h4><strong>E-commerce Development</strong></h4>
+                    <p>Creating and managing multiple <em>fashion retail platforms</em> on Shopify, combining technical development with business strategy and market analysis.</p>
+                    <p><small>Skills: E-commerce, Digital Marketing, Business Development</small></p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming:</strong> <span>Python, C++, JavaScript, Machine Learning Frameworks</span></li>
+                <li><strong>AI/ML:</strong> <span>Deep Learning, Time Series Analysis, Natural Language Processing</span></li>
+                <li><strong>Web Development:</strong> <span>Full-stack Development, API Design, Database Management</span></li>
+                <li><strong>Business:</strong> <span>Startup Development, E-commerce, Strategic Planning</span></li>
+            </ul>
+        </section>
+        
+        <nav>
+            <a href="bio1.html">← Back to Bio</a>
+        </nav>
+        
+        <footer>
+            <address>
+                <small>Mary Tsaryk | Fordham University Computer Science</small>
+            </address>
+        </footer>
+    </main>
+</body>
+</html>
